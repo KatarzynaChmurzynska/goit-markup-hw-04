@@ -252,7 +252,7 @@ address {
   gap: 24px;
 }
 .photo-box {
-  height: 380px;
+  /* height: 428px; */
   width: calc((100% - 72px) / 4);
   box-sizing: border-box;
   border-radius: 0 0 4px 4px;
