@@ -63,9 +63,23 @@ address {
   font-optical-sizing: auto;
 }
 .page-navigation .link:hover,
-.page-navigation .link:active,
 .page-navigation .link:focus {
   color: #404bbf;
+}
+.current {
+  position: relative;
+  color: #404bbf;
+}
+
+.current:active::after {
+  content: '';
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background: #404bbf;
 }
 
 .address .link:hover,
@@ -154,7 +168,13 @@ address {
   padding-bottom: 24px;
 }
 .page-title {
-  background-color: #2e2f42;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url('../images/peopleoffice.jpg');
+  background-size: cover;
+  /* background-color: #2e2f42; */
   padding-top: 188px;
   padding-bottom: 188px;
   height: 600px;
