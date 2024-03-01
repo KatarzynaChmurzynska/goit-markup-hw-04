@@ -79,10 +79,9 @@ address {
   color: #404bbf;
 }
 
-.current:active::after {
+.current::after {
   content: '';
   position: absolute;
-  bottom: 20px;
   left: 0;
   bottom: -1px;
   width: 100%;
