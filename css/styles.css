@@ -72,7 +72,7 @@ address {
 }
 .page-navigation .link:hover,
 .page-navigation .link:focus {
-  color: #404bbf;
+  background-color: #404bbf;
 }
 .menu .current {
   position: relative;
@@ -114,6 +114,7 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding-bottom: 8px;
 }
 .title {
   font-weight: 500;
@@ -276,7 +277,7 @@ address {
   gap: 24px;
 }
 .photo-box {
-  /* height: 428px; */
+  height: 428px;
   width: calc((100% - 72px) / 4);
   box-sizing: border-box;
   border-radius: 0 0 4px 4px;
@@ -347,10 +348,14 @@ img {
   height: 420px;
   margin-left: auto;
   margin-right: auto;
+  background: #fff;
+  transition: box-shadow;
+}
+.project-card:hover {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-  background: #fff;
 }
+
 .box {
   position: relative;
   width: 360px;
@@ -358,6 +363,8 @@ img {
   overflow: hidden;
 }
 .overlay {
+  color: #f4f4fd;
+  padding: 40px 32px;
   position: absolute;
   top: 0;
   left: 0;
@@ -365,15 +372,11 @@ img {
   height: 100%;
   background-color: #4d5ae5;
   transform: translateY(100%);
-  transition: transform 250ms ease-in-out;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.box:hover .overlay {
+.project-card:hover .overlay {
   transform: translateY(0);
-}
-.overlay-text {
-  color: #f4f4fd;
-  padding: 40px 32px;
 }
 
 .project-card-content {
@@ -431,7 +434,6 @@ img {
 .page-footer-right .social-media-items .icons:hover {
   background-color: #31d0aa;
 }
-.page-footer-right .social-media-items .icon:focus,
-.page-footer-right .social-media-items .icon:active {
+.page-footer-right .social-media-items:focus {
   background-color: #31d0aa;
 }
