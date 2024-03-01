@@ -319,8 +319,8 @@ img {
 .social-media-items .icons:hover {
   background-color: #404bbf;
 }
-.social-media-items .icons:focus,
-.social-media-items .icons:active {
+.social-media-items .icon:focus,
+.social-media-items .icon:active {
   background-color: #404bbf;
 }
 
