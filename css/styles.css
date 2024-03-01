@@ -231,6 +231,15 @@ address {
 .solutions-section {
   padding: 120px 0;
 }
+.solutions-svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
 .solutions-list {
   display: flex;
   gap: 24px;
