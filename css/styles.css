@@ -431,9 +431,7 @@ img {
 .page-footer-left {
   margin-right: 120px;
 }
-.page-footer-right .social-media-items .icons:hover {
-  background-color: #31d0aa;
-}
-.page-footer-right .social-media-items:active .icons {
+.page-footer-right .social-media-items .icons:hover,
+.page-footer-right .social-media-items .icons:focus {
   background-color: #31d0aa;
 }
