@@ -408,7 +408,6 @@ img {
 .page-footer .container {
   display: flex;
   align-items: baseline;
-  gap: 120px;
 }
 .footer-socialmedia {
   font-weight: 500;
